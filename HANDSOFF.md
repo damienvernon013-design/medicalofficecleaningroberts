@@ -1,5 +1,9 @@
 # Handoff — medicalofficecleaningroberts.com
 
+## Status: BLOCKED ON ENV VAR — not yet READY TO LAUNCH
+
+Site is pushed to `origin/main` and will build on Vercel. The one remaining blocker is manual and outside this session's access: **`CRM_API_TOKEN` must be set in the Vercel project's environment variables**, or every quote-form submission will fail with a 500. Once that's set and one real test lead is confirmed landing in the CRM, this can move to READY TO LAUNCH.
+
 ## What this is
 
 Static HTML/CSS microsite for Roberts Medical Office Cleaning (Roberts, WI). 43 pages, no build step, no JS framework. Deployed on Vercel, repo already connected to the Vercel project — pushing to `main` triggers a production deploy.
