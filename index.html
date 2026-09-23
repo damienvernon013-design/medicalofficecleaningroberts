@@ -46,6 +46,7 @@
       <li><a href="/our-process/">Our Process</a></li>
       <li><a href="/insured-and-bonded/">Insured &amp; Bonded</a></li>
       <li><a href="/faq/">FAQ</a></li>
+      <li><a href="/blog/">Blog</a></li>
       <li><a href="/request-a-quote/">Get a Quote</a></li>
     </ul>
   </nav>
@@ -67,27 +68,15 @@
     </div>
     <div class="quote-form-card">
   <h2>Free Quote in 60 Seconds</h2>
-  <p class="subtitle">Next-business-day callback guaranteed.</p>
-  <form class="quote-form" action="/request-a-quote/" method="POST">
+  <p class="subtitle">Tell us the basics — we'll open your full quote request with these fields already filled in.</p>
+  <form class="quote-form" action="/request-a-quote/" method="GET">
     <label for="name">Name</label>
     <input type="text" id="name" name="name" placeholder="Your name" required>
-    <label for="facility">Facility / Practice Name</label>
-    <input type="text" id="facility" name="facility" placeholder="Practice or facility name" required>
     <label for="phone">Phone</label>
     <input type="tel" id="phone" name="phone" placeholder="Best number to reach you" required>
-    <label for="email">Email</label>
-    <input type="email" id="email" name="email" placeholder="Your email address" required>
-    <label for="service">Service Needed</label>
-    <select id="service" name="service">
-      <option value="">Select a service</option>
-      <option>Exam Room &amp; Clinical Space Disinfection</option>
-      <option>Dental &amp; Specialty Practice Cleaning</option>
-      <option>Waiting Room &amp; Reception Cleaning</option>
-      <option>General Medical Office Cleaning</option>
-    </select>
-    <label for="notes">Notes (optional)</label>
-    <textarea id="notes" name="notes" placeholder="Square footage, frequency, special requirements..."></textarea>
-    <button type="submit" class="quote-form-submit">Send My Quote Request</button>
+    <label for="sqft">Approx. Square Footage</label>
+    <input type="text" id="sqft" name="sqft" placeholder="e.g. 2,500 sq ft">
+    <button type="submit" class="quote-form-submit">Start My Quote Request</button>
     <p class="form-note">We respond on the next business day. Hours: Mon–Fri 8:30am–5:00pm.</p>
   </form>
 </div>
@@ -184,6 +173,7 @@
   <div class="footer-bottom">
     <span>&copy; 2025 Roberts Medical Office Cleaning. Serving Roberts, WI and surrounding communities.</span>
     <span>(866) 958-8773 &nbsp;|&nbsp; ops@thequotemasters.com</span>
+    <span>Built and Maintained by <a href="https://infin8content.com/" style="color:#a8d5c5;">Infin8Content</a></span>
   </div>
 </footer>
 <script src="/quote-form.js" defer></script>
